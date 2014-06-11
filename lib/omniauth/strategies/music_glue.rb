@@ -19,8 +19,8 @@ module OmniAuth
         {
           :email => raw_info["email"],
           :first_name => raw_info['first_name'],
-          :last_name => raw_info['last_name']
-          # and anything else you want to return to your API consumers
+          :last_name => raw_info['last_name'],
+          :session_nonce => raw_info['session_nonce']
         }
       end
 
